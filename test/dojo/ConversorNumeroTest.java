@@ -22,6 +22,12 @@ public class ConversorNumeroTest {
 	}
 
 	@Test
+	public void verificarasas() {
+		resultadoConversion = conversor.convertirNumeroDecimalToRomano(1);
+		assertEquals("I", resultadoConversion);
+	}
+
+	@Test
 	public void verificarConversionNumero2() {
 		resultadoConversion = conversor.convertirNumeroDecimalToRomano(2);
 		assertEquals("II", resultadoConversion);
